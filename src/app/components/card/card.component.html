@@ -1,9 +1,12 @@
 <a class="card__container" href="#">
 	<img
 		class="card__img"
-		src="../../../assets/bt-5.jpg"
+		[src]="gameCoverURL"
 		alt="imagem de capa de uma jogo"
 	/>
-	<app-card-label gameLabel="Exclusive"></app-card-label>
-	<app-card-pricing></app-card-pricing>
+	<app-card-label [gameLabel]="gameLabel"></app-card-label>
+	<app-card-pricing
+		[gamePrice]="gamePrice"
+		[gameType]="gameType"
+	></app-card-pricing>
 </a>
